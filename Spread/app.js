@@ -14,3 +14,15 @@ const dogs = ['Jasmina', 'Gemma', 'Mojo'];
 const allPets = [...cats, ...dogs];
 
 //spread in object literals
+const feline = { legs: 4, family: 'Felidae' };
+const canine = { isFurry: true, family: 'Caninae' };
+
+const catDog = { ...feline, ...canine };
+
+
+const dataFromForm = {
+    email: 'theguy@gmail.com',
+    password: 'BigMan123!',
+    username: 'nothim'
+}
+const newUser = { ...dataFromForm, id: 2453, isAdmin: false };
